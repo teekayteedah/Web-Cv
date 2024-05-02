@@ -1,0 +1,376 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+    
+}
+body{
+    
+    background-image: url('../images/darkbg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+header{
+    width: 100%;
+    height: 80px;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    position: fixed;
+    overflow: hidden;
+    z-index: 1;
+}
+.logo{
+    padding: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 300px;
+}
+.logo a img:hover{
+    transform: scale(1.2);
+    padding-top: 5px;
+    border-radius: 50px;
+}
+.hamburg{
+  display: none; 
+}
+ .nav-bar ul {
+    display: flex;
+    list-style: none;
+ }
+ .nav-bar ul a{
+    display: block;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 5px;
+ }
+ .nav-bar ul li a:hover{
+    color: #fff;
+    background-color: #096499;
+ }
+ .nav-bar ul li a.active{
+    color: #fff;
+    background-color: rgb(74, 143, 6);
+ }
+ @media only screen and (max-width:1320px){
+    header{
+        padding: 0 50px;
+    }
+ }
+ @media only screen and (max-width:1100px){
+    header{
+        padding: 0 30px;
+    }
+ }
+ @media only screen and (max-width:900px){
+    .hamburg{
+        display: block;
+        cursor: pointer;
+    }
+    .hamburg .line{
+        width: 30px;
+        height: 3px;
+        background: #fff;
+        margin: 6px 0;
+    }
+    .nav-bar{
+        height: 0px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: #000;
+        transition: 0.5s;
+        overflow: hidden;
+       
+    }
+    .nav-bar.active{
+        height: 450px;
+    }
+    .nav-bar ul{
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+    .nav-bar.active ul {
+        opacity: 1;
+    }
+    .nav-bar ul li a{
+        margin-bottom: 12px;
+        color: red;
+    }
+
+ }
+ footer{
+    background-color: #000;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    list-style: none;
+ }
+ .footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px;
+    
+ }
+ .icons{
+    display: flex;
+    justify-content: center;
+ }
+ .icons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 50px;
+ }
+ .icons a{
+    font-size: 2em;
+    color: #000;
+    opacity: 0.9;
+ }
+ .icons a:hover{
+     background-color: #111;
+     transition: 0.5s;
+ }
+ .icons a:hover i{
+    color: #fff;
+    transition: 0.5s;
+ }
+ .footerNav{
+    margin: 30px 0;
+ }
+ .footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+ }
+ .footerNav ul li a{
+    color: #fff;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+ }
+ .footerNav ul li a:hover{
+    color:#000;
+    background-color: #ffff00;
+    opacity: 1;
+    border-radius: 50px;
+ }
+ .footerBottom{
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+ }
+ .footerBottom{
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+ }
+ .footerBottom p{
+    color: #fff;
+ }
+ .designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0 5px;
+ }
+ @media(max-width:700px){
+    .footerNav ul{
+        flex-direction: column;
+    }
+    .footerNav ul li{
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+ }
+
+ .content{
+    padding-top: 10%;
+    margin-left: 5%;
+    color: #fff;
+    display: inline-block; 
+    
+
+ }
+ .intro{
+    float: left;
+    padding: 1rem 1rem;
+    vertical-align: middle;
+    width: 60%;
+    padding-top: 150px;
+    border: #000;
+    
+ }
+ .myImage{
+    float: right;
+    padding: 1rem 1rem;
+    vertical-align: middle;
+    width: 40%;
+    position: relative;
+    border-color: #096499;   
+     /*border: 1px solid red;*/
+     padding-top: 100px;
+
+    
+ }
+h1 h2 h3{
+    font-weight: bold;
+    
+}
+.mypic {
+    height :40%;
+    width:50%;
+    border-radius: 600px;
+}
+.about{
+    padding-left: 60px;
+    text-align: center;
+    width: 80%;
+    padding: top 10px;
+    color: #000;
+    
+}
+#paragraIntro{
+   font-weight: bold;
+   background-color: #fff;
+   border-radius: 50px;
+}
+.skils{
+   color: #000;
+   text-align: center;
+   display: inline-block;
+   background-color: #fff;
+   border-radius: 50px;
+}
+.backgroundEd{
+   color: #fff;
+
+}
+hr.line{
+   margin-top: 0;
+   border:2px dashed yellow ;
+   
+}
+.experinceContainer{
+   padding: 10%;
+   color: #fff;
+   display: inline-block;
+}
+.experience{
+   padding-top: 2%;
+   float: left;
+   width: 44%;
+
+}
+.courses{
+   padding-top: 2%;
+   float: right;
+   padding-left: 3%;
+   width: 44%;
+ 
+}
+ ul.duties{
+   
+   list-style: circle;
+   padding-left: 10px;
+  
+}
+ul li::marker{
+   color: red;
+}
+i{
+   font-weight:bold ;
+   font-style: normal;
+}
+.vl{
+   border-left:3px solid blue;
+
+   margin-top: 2%;
+   height: 400px;
+   position: absolute;
+   float: right;
+   left: 47%;
+   margin-left: 2px;
+   margin-bottom: 2%;
+}
+hr.between{
+   margin-top: 10px;
+   margin-bottom: 1px;
+}
+
+@media(max-width:700px){
+   .vl{
+       height: 730px;
+       position: relative;
+   }
+   
+}
+@media(max-width:900px){
+   .vl{
+       height: 530px;
+   }
+   
+}
+@media(max-width:700px){
+   .vl{
+       height: 730px;
+   }
+   
+}
+   .hobies{
+      list-style: circle;
+   }
+.skillz{
+   text-align: center;
+   color: #000;
+   background-color: lightblue;
+   padding-left: 10%;
+   padding-right: 10%;
+   border-radius: 500px;
+   width: 80%;
+   margin-left: 10%;
+   margin-right: 10%;
+   box-shadow: 5px 10px dimgrey;
+   
+}
+#skillz{
+   background-color: #272626;
+   color: #fff;
+   font-weight: bold;
+}
+ul.none{
+   list-style: none;
+}
+@media(max-width:700px){
+   .myImage{
+      padding: 1rem 1rem;
+      position: re;
+      border-color: #096499;   
+       padding-top: 50px;
+       padding-bottom: 100px;
+       margin-bottom: 100px;
+       float: none;
+   }
+   
+}
